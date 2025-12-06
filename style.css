@@ -1,0 +1,129 @@
+/* ---------- GLOBAL STYLES ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f3e7ff, #d2f4ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+/* ---------- CARD CONTAINER ---------- */
+.container {
+    background: #ffffffcc; /* translucent white = clean */
+    backdrop-filter: blur(12px);
+    width: 90%;
+    max-width: 520px;
+
+    padding: 30px;
+    border-radius: 22px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* ---------- HEADING ---------- */
+.container h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #2b2b2b;
+}
+
+/* ---------- INPUT AREA ---------- */
+.input-area {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    background: #f1f5ff;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.input-area input:focus {
+    background: #e7edff;
+    outline: 2px solid #7b9bff;
+}
+
+/* ---------- MODERN BUTTON ---------- */
+.input-area button {
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #7b9bff, #a07bff);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.25s ease;
+}
+
+.input-area button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(123, 155, 255, 0.4);
+}
+
+/* ---------- QUOTE LIST ---------- */
+#quoteList {
+    list-style: none;
+}
+
+/* Card for each quote */
+.quote-item {
+    background: #ffffff;
+    padding: 15px 18px;
+    margin-bottom: 14px;
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: 0.2s ease;
+}
+
+.quote-item:hover {
+    transform: translateY(-2px);
+}
+
+/* ---------- DELETE BUTTON ---------- */
+.delete-btn {
+    background: #ff6b81;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: #ff4d68;
+}
+
+/* Fade in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
